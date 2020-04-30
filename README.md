@@ -12,7 +12,9 @@ The example code tests HEDGE with the LSTM model on the IMDB dataset. To run the
 python hedge_main.py --save /path/to/your/model --out-file hedge.txt
 ```
 
-To visualize the hierarchical interpretation of a sentence, uncomment line 91 and line 120, and comment line 90. Then in line 91, set the index of the sentence that you want to visualize.
+To visualize the hierarchical interpretation of a sentence, uncomment line 91 and line 120, and comment line 90. You can set the index of the sentence that you want to visualize.
+
+## This
 
 
 
