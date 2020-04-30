@@ -14,7 +14,7 @@ python hedge_main.py --save /path/to/your/model --out-file hedge.txt
 
 To visualize the hierarchical interpretation of a sentence, uncomment line 91 and line 120, and comment line 90. You can set the index of the sentence that you want to visualize.
 
-## This
+### This
 
 
 
