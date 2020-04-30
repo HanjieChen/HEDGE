@@ -169,7 +169,7 @@ class Shapley_TopDown_Tree:
         return phrase_list, score_list
 
 
-    def visualize_tree(self, batch, wordvocab, fontsize=10):
+    def visualize_tree(self, batch, wordvocab, fontsize=8):
         levels = self.max_level
         vals = np.array([fea[1] for level in range(levels) for fea in self.hier_tree[level]])
         min_val = np.min(vals)
@@ -182,9 +182,9 @@ class Shapley_TopDown_Tree:
         min_color = -1
         cnorm = mpl.colors.Normalize(vmin=min_color, vmax=max_color, clip=False)
     
-        if self.pred_label == 0: #0 stands for positive
+        if self.pred_label == 1: #1 stands for positive
             cmapper = mpl.cm.ScalarMappable(norm=cnorm, cmap='RdYlGn')
-        else: #1 stands for negative
+        else: #0 stands for negative
             cmapper = mpl.cm.ScalarMappable(norm=cnorm, cmap='RdYlGn_r')
 
         words = batch.text.numpy()
@@ -192,7 +192,7 @@ class Shapley_TopDown_Tree:
         fig, ax = plt.subplots(figsize=(12, 7))
         ax.xaxis.set_visible(False)
 
-        ylabels = ['Level '+str(idx) for idx in range(self.max_level+1)]
+        ylabels = ['Step '+str(idx) for idx in range(self.max_level+1)]
         ax.set_yticks(list(range(0, self.max_level+1)))
         ax.set_yticklabels(ylabels,fontsize=15)
         ax.set_ylim(self.max_level+0.5, 0-0.5)
