@@ -183,9 +183,9 @@ class Shapley_TopDown_Tree:
         cnorm = mpl.colors.Normalize(vmin=min_color, vmax=max_color, clip=False)
     
         if self.pred_label == 1: #1 stands for positive
-            cmapper = mpl.cm.ScalarMappable(norm=cnorm, cmap='RdYlGn')
+            cmapper = mpl.cm.ScalarMappable(norm=cnorm, cmap='RdYlBu')
         else: #0 stands for negative
-            cmapper = mpl.cm.ScalarMappable(norm=cnorm, cmap='RdYlGn_r')
+            cmapper = mpl.cm.ScalarMappable(norm=cnorm, cmap='RdYlBu_r')
 
         words = batch.text.numpy()
         nwords = words.shape[0]
@@ -194,7 +194,7 @@ class Shapley_TopDown_Tree:
 
         ylabels = ['Step '+str(idx) for idx in range(self.max_level+1)]
         ax.set_yticks(list(range(0, self.max_level+1)))
-        ax.set_yticklabels(ylabels,fontsize=15)
+        ax.set_yticklabels(ylabels,fontsize=18)
         ax.set_ylim(self.max_level+0.5, 0-0.5)
 
         sep_len = 0.3
@@ -217,5 +217,6 @@ class Shapley_TopDown_Tree:
                             color=text_color, fontsize=fontsize)
                     word_pos += sep_len
                 start += (width + sep_len)
-        fig.colorbar(cmapper, ax=ax)
+        cb = fig.colorbar(cmapper, ax=ax)
+        cb.ax.tick_params(labelsize=18)
         plt.show()
