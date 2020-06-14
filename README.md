@@ -9,7 +9,7 @@ Requirement:
 
 We provide the example code of HEDGE interpreting the LSTM, CNN and BERT model on the IMDB dataset. We adopt the BERT-base model built by huggingface: https://github.com/huggingface/transformers.
 
-To run the code, use the following command:
+In each folder, run the following command:
 ```
 python hedge_main.py --save /path/to/your/model --out-file hedge.txt
 ```
