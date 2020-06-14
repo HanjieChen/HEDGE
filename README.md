@@ -21,4 +21,11 @@ python hedge_main_model_imdb.py --save /path/to/your/model --visualize 1(the ind
 
 ### Reference:
 If you find this repository helpful, please cite our paper:
-
+```bibtex
+@article{chen2020generating,
+  title={Generating hierarchical explanations on text classification via feature interaction detection},
+  author={Chen, Hanjie and Zheng, Guangtao and Ji, Yangfeng},
+  journal={arXiv preprint arXiv:2004.02015},
+  year={2020}
+}
+```
