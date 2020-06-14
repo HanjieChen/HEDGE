@@ -14,6 +14,10 @@ In each folder, run the following command:
 python hedge_main_model_imdb.py --save /path/to/your/model
 ```
 
+To visualize the hierarchical explanation of a sentence, run
+```
+python hedge_main_model_imdb.py --save /path/to/your/model --visualize 1(the index of the sentence)
+```
 
 
 
