@@ -7,7 +7,7 @@ Requirement:
 - pytorch == 1.2.0
 - numpy == 1.16.4
 
-We provide the example code of HEDGE interpreting the LSTM, CNN and BERT model on the IMDB dataset. We adopt the BERT-base model built by huggingface [https://github.com/huggingface/transformers].
+We provide the example code of HEDGE interpreting the LSTM, CNN and BERT model on the IMDB dataset. We adopt the BERT-base model built by huggingface: https://github.com/huggingface/transformers.
 
 To run the code, use the following command:
 ```
