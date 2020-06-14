@@ -9,7 +9,7 @@ Code for the paper ["Generating Hierarchical Explanations on Text Classification
 
 We provide the example code of HEDGE interpreting the LSTM, CNN and BERT model on the IMDB dataset. We adopt the BERT-base model built by huggingface: https://github.com/huggingface/transformers.
 
-In each folder, run the following command:
+In each folder, run the following command to generate explanations on the test data for a well-trained model.
 ```
 python hedge_main_model_imdb.py --save /path/to/your/model
 ```
