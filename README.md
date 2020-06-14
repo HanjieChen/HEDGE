@@ -11,7 +11,7 @@ We provide the example code of HEDGE interpreting the LSTM, CNN and BERT model o
 
 In each folder, run the following command:
 ```
-python hedge_main_model_imdb.py --save /path/to/your/model --out-file hedge.txt
+python hedge_main_model_imdb.py --save /path/to/your/model
 ```
 
 
