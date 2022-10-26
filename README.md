@@ -1,4 +1,5 @@
 # HEDGE
+(Original repo [UVa-NLP/HEDGE](https://github.com/UVa-NLP/HEDGE))
 Code for the paper ["Generating Hierarchical Explanations on Text Classification via Feature Interaction Detection"](https://arxiv.org/abs/2004.02015)
 
 ### Requirement:
